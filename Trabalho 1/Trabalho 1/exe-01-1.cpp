@@ -4,7 +4,6 @@ using namespace std;
 
 void area(float val[]) {
 	float aux;
-
 	for (int i=0; i<5; i++) {
 		for(int j=0; j<5-i; j++) {
 			if(val[j] < val[j+1]) {
@@ -14,15 +13,13 @@ void area(float val[]) {
 			}
 		}
 	}
-	
+
 	for (int i=0; i<5; i++) {
 		cout<<val[i]<<"\t"<<endl;
 	}
 }
 
-
 int main() {
-
 	float v1[5];
 	float b, h;
 	for (int i=0; i<=4; i++) {
@@ -34,5 +31,4 @@ int main() {
 	}
 
 	area(v1);
-
 }
